@@ -1,6 +1,9 @@
 export default function homepage() {
   const content = document.querySelector("#content");
 
+  const home = document.createElement("div");
+  home.classList.add("home");
+
   const homeRight = document.createElement("div");
   homeRight.classList.add("home-right");
 
@@ -11,9 +14,7 @@ export default function homepage() {
   paragraph.textContent =
     "Join us – where every bite tells a story, and every moment is a celebration of sweetness. Welcome to our bakery family!";
 
-  console.log("Title element:", title);
-  console.log("Paragraph element:", paragraph);
-
-  content.appendChild(homeRight);
+  content.appendChild(home);
+  home.appendChild(homeRight);
   homeRight.append(title, paragraph);
 }

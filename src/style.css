@@ -31,7 +31,10 @@ nav {
 }
 
 #content {
-  background-image: url("foodArt.jpg");
+}
+
+.home {
+  background-image: url(./images/foodArt.jpg);
   width: 100vw;
   height: 100vh;
   background-repeat: no-repeat;

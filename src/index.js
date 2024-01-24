@@ -1,4 +1,5 @@
 import homepage from "./homepage";
+import menu from "./menu";
 
 homepage();
-console.log("Hi");
+menu();
