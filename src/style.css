@@ -21,10 +21,12 @@ button {
 }
 
 nav {
+  width: 100vw;
+  position: fixed;
   display: flex;
   justify-content: center;
   align-items: center;
-  grid-gap: 100px;
+  gap: 100px;
   background-color: rgb(247, 198, 198);
 }
 
