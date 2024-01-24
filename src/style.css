@@ -3,13 +3,18 @@
   padding: 0;
 }
 
+body {
+  font-family: sans-serif;
+  color: rgb(252, 123, 123);
+}
+
 button {
   cursor: pointer;
   width: 100px;
   height: 30px;
   border: none;
   color: white;
-  background-color: rgb(255, 127, 127);
+  background-color: rgb(252, 123, 123);
   border-radius: 7px;
   font-weight: 900;
   font-size: 17px;
@@ -20,7 +25,7 @@ nav {
   justify-content: center;
   align-items: center;
   grid-gap: 100px;
-  background-color: rgb(250, 237, 237);
+  background-color: rgb(247, 198, 198);
 }
 
 #content {
@@ -29,4 +34,23 @@ nav {
   height: 100vh;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.home-right {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  width: 40vw;
+  margin-left: auto;
+  padding: 200px;
+}
+
+p {
+  font-style: italic;
+  font-size: 30px;
+}
+
+h1 {
+  font-size: 40px;
+  margin-top: 50px;
 }
