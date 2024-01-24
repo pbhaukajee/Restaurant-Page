@@ -5,7 +5,7 @@ import cheesecake from "./images/cheesecake.jpg";
 import tiramisu from "./images/tiramisu.jpg";
 import cake from "./images/cake.jpg";
 
-export default function () {
+export default function menu() {
   const content = document.querySelector("#content");
 
   const items = document.createElement("div");
@@ -46,12 +46,12 @@ export default function () {
     const images = document.createElement("img");
     images.src = item.src;
     images.alt = item.name;
-
     item.appendChild(images);
 
     const itemName = document.createElement("p");
     itemName.textContent = item.name;
-
     item.appendChild(itemName);
+
+    items.appendChild(item);
   });
 }
