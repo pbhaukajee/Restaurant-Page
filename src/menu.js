@@ -40,18 +40,18 @@ export default function menu() {
   ];
 
   menuItems.forEach((item) => {
-    const item = document.createElement("div");
-    item.classList.add("item");
+    const menuDetails = document.createElement("div");
+    menuDetails.classList.add("menu-details");
 
     const images = document.createElement("img");
     images.src = item.src;
     images.alt = item.name;
-    item.appendChild(images);
+    menuDetails.appendChild(images);
 
     const itemName = document.createElement("p");
     itemName.textContent = item.name;
-    item.appendChild(itemName);
+    menuDetails.appendChild(itemName);
 
-    items.appendChild(item);
+    items.appendChild(menuDetails);
   });
 }
