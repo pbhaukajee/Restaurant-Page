@@ -11,7 +11,7 @@ body {
 button {
   cursor: pointer;
   width: 100px;
-  height: 30px;
+  height: 40px;
   border: none;
   color: white;
   background-color: rgb(252, 123, 123);
@@ -22,7 +22,9 @@ button {
 
 nav {
   width: 100vw;
+  height: 75px;
   position: fixed;
+  top: 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -55,4 +57,66 @@ p {
 h1 {
   font-size: 40px;
   margin-top: 50px;
+}
+
+.items {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  align-self: center;
+  padding: 150px;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+
+.menu-details {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.menu-p {
+  font-size: 20px;
+  font-weight: 900;
+}
+
+#images {
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 300px;
+  width: auto;
+  border-radius: 10px;
+}
+.cookies {
+  background-image: url(./images/cookies.jpg);
+}
+
+.croissant {
+  background-image: url(./images/croissant.jpg);
+}
+
+.cupcake {
+  background-image: url(./images/cupcake.jpg);
+}
+
+.cheesecake {
+  background-image: url(./images/cheesecake.jpg);
+}
+
+.tiramisu {
+  background-image: url(./images/tiramisu.jpg);
+}
+
+.cake {
+  background-image: url(./images/cake.jpg);
+}
+
+.contact {
+  width: 500px;
+  height: auto;
+  padding: 0 30px 60px 30px;
+  border: 1px solid red;
+  margin: 150px auto;
+  border-radius: 10px;
+  text-align: center;
 }

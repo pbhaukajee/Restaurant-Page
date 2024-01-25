@@ -1,9 +1,9 @@
-import cookies from "./images/cookies.jpg";
-import croissant from "./images/croissant.jpg";
-import cupcake from "./images/cupcake.jpg";
-import cheesecake from "./images/cheesecake.jpg";
-import tiramisu from "./images/tiramisu.jpg";
-import cake from "./images/cake.jpg";
+// import cookies from "./images/cookies.jpg";
+// import croissant from "./images/croissant.jpg";
+// import cupcake from "./images/cupcake.jpg";
+// import cheesecake from "./images/cheesecake.jpg";
+// import tiramisu from "./images/tiramisu.jpg";
+// import cake from "./images/cake.jpg";
 
 export default function menu() {
   const content = document.querySelector("#content");
@@ -14,28 +14,28 @@ export default function menu() {
 
   const menuItems = [
     {
-      src: cookies,
-      name: "Choclolate chip cookies",
+      class: "cookies",
+      name: "Choclolate chip cookies - $2.99",
     },
     {
-      src: croissant,
-      name: "Croissants",
+      class: "croissant",
+      name: "Croissants - $1.99",
     },
     {
-      src: cupcake,
-      name: "Cupcakes",
+      class: "cupcake",
+      name: "Cupcakes - $3.99",
     },
     {
-      src: cheesecake,
-      name: "Cheesecake",
+      class: "cheesecake",
+      name: "Cheesecake - $4.35",
     },
     {
-      src: tiramisu,
-      name: "Tiramisu",
+      class: "tiramisu",
+      name: "Tiramisu - $4.35",
     },
     {
-      src: cake,
-      name: "Vanilla Cake",
+      class: "cake",
+      name: "Vanilla Cake - $29.99",
     },
   ];
 
@@ -43,12 +43,13 @@ export default function menu() {
     const menuDetails = document.createElement("div");
     menuDetails.classList.add("menu-details");
 
-    const images = document.createElement("img");
-    images.src = item.src;
-    images.alt = item.name;
-    menuDetails.appendChild(images);
+    const imageDiv = document.createElement("div");
+    imageDiv.classList.add(`${item.class}`);
+    imageDiv.id = "images";
+    menuDetails.appendChild(imageDiv);
 
     const itemName = document.createElement("p");
+    itemName.classList.add("menu-p");
     itemName.textContent = item.name;
     menuDetails.appendChild(itemName);
 
